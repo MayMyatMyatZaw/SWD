@@ -1,0 +1,316 @@
+:root{
+    --primary: #2d88ff;
+    --dark: #18191a;
+    --sime-dark: #242526;
+    --sof-dark: #3a3b3c;
+    --danger: #f02849;
+    --success: #44b960;
+    --warning: #dda758;
+    --text: #b7b9bd;
+    --text-light:#ffffff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: var(--text);
+}
+
+body{
+    background-color: var(--dark);
+}
+.nav{
+    background-color: var(--sime-dark);
+    /* height: 60px; */
+    display: flex;
+}
+.left{
+    width: 25%;
+}
+.left-box{
+    display: flex;
+    padding: 10px;
+}
+.logo{
+    width: 40px;
+    margin-right: 10px;
+    
+}
+.search-box{
+    background-color: var(--sof-dark);
+    border-radius: 100px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+.search-box .feather-search{
+    margin-right: 10px;
+}
+.search-input{
+    color: var(--text);
+    background-color: var(--sof-dark);
+    border: none;
+}
+.search-input:focus{
+    outline: none;
+}
+
+
+
+/* center */
+.center{
+    width: 50%;
+}
+.center-box{
+    display: flex;
+    justify-content: center;
+}
+.center-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    margin: 0 5px;
+    border-top: 5px solid var(--sime-dark);
+    border-bottom: 5px solid var(--sime-dark);
+    padding: 10px;
+    position: relative;
+    transition: 0.5s;
+}
+.center-link:hover{
+    background-color: var(--sof-dark);
+    border-radius: 15px;
+}
+.center-link.active{
+    border-bottom-color:  var(--primary);
+
+}
+.center-link.active:hover{
+    background-color: var(--sime-dark);
+    border-radius: 0px;
+}
+.center-link.active .center-icon{
+    color: var(--primary)!important;
+
+}
+.center-icon{
+    font-size:  30px;
+}
+.center-link .notification{
+    background: var(--danger);
+    padding: 1px 5px;
+    border-radius: 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-weight: 900;
+    color: var(--text-light);
+}
+
+.right{
+    width: 25%;
+}
+.right-box{
+    display: flex;
+    justify-content: flex-end;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.profile:hover{
+    background-color: var(--sof-dark);
+    
+}
+.profile-photo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.profile-text{
+    color: var(--text);
+    font-weight: bolder;
+}
+.right-notification-box{
+    display: flex;
+    
+}
+.right-notification{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--sof-dark);
+    border-radius: 50%;
+    margin: 10px 5px;
+}
+/* fb body */
+.fb-body{
+    display: flex;
+}
+.left-aside{
+    width: 25%;
+}
+.news-feed{
+    width: 50%;
+}
+.myday-list{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* overflow-y: scroll; */
+    /* position: absolute; */
+    width: 100%;
+}
+.myday-item{
+    width: 110px;
+}
+.myday{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.scroll-myday{
+    width: 50px;
+    height: 50px;
+    background-color: var(--sime-dark);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 334px;
+    top: 154px;
+    z-index: 2;
+}
+.myday-owner{
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myday-owner .feather-plus{
+    background: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myday-owner.first{
+    background-color: var(--sime-dark);
+}
+.myday-owner-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: 100%;
+    background-position: center;
+}
+.myday-text{
+    /* position: absolute; */
+    bottom: 10px;
+    color: var(--text-light);
+    font-weight: bolder;
+
+}
+.myday-image{
+    width: 100%;
+}
+.add-post{
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: var(--sime-dark);
+    padding: 10px 20px;
+}
+
+.add-post-box{
+
+}
+
+.add-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-text-profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+}
+
+.add-text-box{
+    background-color: var(--sof-dark);
+    border-radius: 100px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.divider{
+    height: 1px;
+    background-color: var(--sof-dark);
+    margin : 10px 0;
+}
+
+.add-file{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-file div{
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.add-file div:hover{
+    background-color: var(--sof-dark);
+}
+
+.add-file .video i{
+    margin-right: 5px;
+   color: var(--danger); 
+}
+
+.add-file .photo i{
+    margin-right: 5px;
+    color: var(--success);
+}
+
+.add-file .emoji i{
+    margin-right: 5px;
+    color: var(--warning);
+}
+
+.post-list{
+
+}
+.chatbox{
+    width: 25%;
+}

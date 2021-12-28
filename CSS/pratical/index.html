@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fa Animation Project</title>
+    <style>
+        .room{
+            width: 600px;
+            height: 500px;
+            background-image: url(img/bg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .lu-div{
+            position: absolute;
+            left: 263px;
+            top: 320px;
+        }
+        .lu{
+            width: 100px;
+        }
+        .boy{
+            transform: translateX(-100px);
+            animation: toLeft 5s;
+        }
+        .girl{
+            transform: translateX(100px);
+            animation: toRight 5s;
+        }
+        .knife{
+            width: 100px;
+            position: absolute;
+            left: 300px;
+            top: 320px;
+            animation: slice 4s;
+        }
+        .fa{
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            animation: aa 6s;
+        }
+
+        @keyframes toLeft {
+            0%{
+                transform: translateX(0px);
+            }
+            80%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translateX(-100px);
+            }
+        }
+        @keyframes toRight {
+            0%{
+                transform: translateX(0px);
+            }
+            80%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translateX(100px);
+            }
+        }
+        @keyframes slice {
+            0%{
+                top: 590px;
+            }
+            40%{
+                top: 290px;
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(60deg);
+            }
+            60%{
+                transform: rotate(0deg);
+            }
+            70%{
+                transform: rotate(60deg);
+            }
+            80%{
+                transform: rotate(0deg);
+            }
+            90%{
+                transform: rotate(60deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            } 
+        }
+        @keyframes aa {
+            0%{
+                top: 500px;
+            }
+            80%{
+                top:500px;
+            }
+            100%{
+                top: 0px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="room">
+        <div class="lu-div">
+            <img class="lu boy" src="img/boy.png" alt="">
+            <img class="lu girl" src="img/girl.png" alt="">
+        </div>
+        <img src="img/knife.png" class="knife" alt="">
+        <div class="fa">
+            <div class="">
+                <img src="img/fa.png" alt="" style="width: 100px;">
+                <p>
+                    Fa is the best
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

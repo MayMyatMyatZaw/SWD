@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;500&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Mukta', sans-serif;
+            
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+        .home{
+            background-image: url(img/myboy2.png);
+            height: 100vh;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            padding: 0 200px;
+            position: relative;
+            opacity: 0.5;
+            z-index: -2;
+        }
+        .home::before{
+            content: "";
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background: #43C6AC;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+            z-index: -1;
+            backdrop-filter: blur(15px);
+        }
+        .home-content{
+            width: 350px;
+        }
+        .home-content-title{
+            color: #35eeee;
+        }
+        .home-content-para{
+            color: #144852;
+        }
+        .up{
+            width: 50px;
+            height: 50px;
+            background: #d5d5d5;
+            border-radius: 50%;
+            position: fixed;                                                        
+            bottom: 50px;
+            left: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .up-icon{
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1 class="home-content-title">Hello Testing</h1>
+            <p class="home-content-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nam beatae quia magni ipsa consequatur ratione, ipsam sint odit impedit incidunt autem! Et eveniet tempore ullam dolorem perferendis soluta facilis.</p>
+        </div>
+    </section>
+    <section style="height: 100vh;">
+    </section>
+    <a href="#home" class="up">
+        <svg class="up-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg>
+    </a>
+
+
+</body>
+</html>

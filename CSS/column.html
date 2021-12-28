@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column Property</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Uchen', serif;
+        }
+        body{
+            padding: 50px;
+        }
+        .heading{
+            color: aqua;
+            
+        }
+        .paragraph{
+            color: #333333;
+            column-count: 3;
+            column-width: 300px;
+            column-rule: 1px solid #db0d53;
+            column-gap: 50px;
+            
+        }
+        .paragraph p{
+            margin-bottom: 30px;
+            line-height: 2;
+            /* text-align: justify; */
+        }
+        .full{
+            column-span: all;
+            margin-top: 30px;
+        }
+        @media screen and (max-width:480px) {
+            body{
+                padding: 25px;
+            }
+            .heading{
+                margin-bottom: 30px;
+            }
+            .full{
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">CSS Column Property</h1>
+    <div class="paragraph">
+        <p class="full">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut eum unde, quaerat accusantium numquam et, qui rerum provident illum tenetur vero facere dicta? Illo sapiente repudiandae harum consectetur, ad autem!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, unde ipsum a adipisci molestias, ab nihil reprehenderit voluptas tenetur sequi autem. Repudiandae deleniti saepe modi illo possimus sint, iusto ea.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda laboriosam libero minus, quam nostrum amet quaerat dignissimos perferendis quisquam, ut cumque excepturi, ea ab facere odio magnam impedit? Velit, est!
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium expedita, distinctio esse quas mollitia dignissimos nesciunt quibusdam, labore asperiores fugiat molestiae non soluta quam commodi vitae? Accusantium, magnam? Velit, exercitationem.
+        </p>
+        <p  class="full">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptate autem alias quaerat ea accusamus neque cumque voluptatum doloribus totam quam quo deleniti nisi nemo, rerum, nihil ipsam, consectetur architecto?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, rerum odit, iure repellat itaque tempore quaerat nemo sit eius pariatur voluptatum, iusto dolorem quidem cupiditate optio veritatis vero perferendis officia?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ad, maiores itaque molestias sint enim veniam qui laudantium totam fugit doloribus porro aperiam voluptatem. Placeat voluptate magnam ea nesciunt optio?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eligendi voluptas voluptates officiis? Eligendi, vitae obcaecati excepturi, perspiciatis perferendis porro harum dolorum commodi dolore exercitationem explicabo est suscipit soluta nihil!
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        h1::before{
+            content: "Hello ";
+            color: #03a9f4;
+        }
+        h1::after{
+            content: " After";
+            color: blueviolet;
+        }
+        .box1{
+            width: 300px;
+            height: 100px;
+            background: pink;
+            border-radius: 15px;
+            
+        }
+        .box{
+            width: 300px;
+            height: 100px;
+            background: pink;
+            border-radius: 15px;
+            position: relative;
+        }
+        .box-tail{
+            /* width: 50px;  */
+            /* height: 50px; */
+            background-color: pink;
+            /* margin-top: 10px; */
+            border: 20px solid #ffffff;
+            border-top-color: pink;
+            display: inline-block;
+            margin-left: 200px;
+            
+
+        }
+        .box::after{
+            content: "";
+            /* width: 50px; */
+            /* height: 50px; */
+            position: absolute;
+            bottom: -50px;
+            left: 200px;
+            border: 25px solid white;
+            display: inline-block;
+            border-top-color: pink;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Min Ga Lar Par</h1>
+    <br/><br/><br/><br/>
+    
+    <div class="box1"></div>
+    <div class="box-tail"></div>
+    <br>
+    <div class="box"></div>
+    
+</body>
+</html>
